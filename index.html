@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #000;
+    color: bisque;
+    border-bottom: 0.5px solid gray;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family:'Karla';
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: bisque;
+}
+
+.navbar a.nav-logo{
+    float: left;
+    height:inherit;
+    line-height: inherit;
+    padding:0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Karla';
+    color: bisque;
+    font-weight: bold;
+}
+.navbar ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0px;
+
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+}
+.navbar ul li a:hover{
+    background-color: gray;
+}
+body{
+    background-color: #000;
+
+}
+.content{
+    font-family: 'Karla';
+    color: bisque;
+    margin-top: 30%;
+    margin-left: 100px;
+
+}
+h1{
+    font-size: 50px;
+}
+p{
+    margin-top: 20px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btns{
+    margin-top: 20px;
+    background: #d8d8d8;;
+    cursor: pointer;
+    color: #191919;
+    padding: 12px 20px;
+    float: left;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+img{
+    margin-top: 80px;
+    margin-left: 175px;
+    width: 700px;
+    filter:drop-shadow();
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class ="nav-logo">Food For All</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content">
+            <h1>At the Heart of Food and Service</h1>
+            <p>​​​​​​FoodForAll has a passion for helping others. We proudly partner with more local ranchers, growers, and producers than any distributor in the industry. We support farm to table initiatives to deliver the best products from anywhere, to everywhere. FoodForAll has partnerships with food banks and other hunger relief organizations to invest in the needs of diverse communities around the world. Fighting hunger is a vital part of FoodForAll’s heart.</p>
+            <br>
+            <a href="http://localhost:5000/employee"> <button class="btns">Employee</button></a>
+            <a href="http://localhost:5000/client"> <button class="btns">Client</button></a>
+        </div>
+        <div>
+            
+        </div>
+    </main>
+    
+</body>
+</html>

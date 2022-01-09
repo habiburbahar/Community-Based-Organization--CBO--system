@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 
+<div class="container">
+  <h2><%= title %></h2>
+  <form action="/updateEmployee" method="post">
+    <input type="hidden" value="<%= user.id %>" name="id">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter Name" value="<%= user.name %>" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="designation">Designation:</label>
+      <input type="designation" class="form-control" id="designation" placeholder="Enter Designation" value="<%= user.designation %>" name="designation" required>
+    </div>
+    <div class="form-group">
+      <label for="salary">Salary:</label>
+      <input type="text" class="form-control" id="salary" placeholder="Enter salary" value="<%= user.salary %>" name="salary" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+ 
+</body>
+</html>
